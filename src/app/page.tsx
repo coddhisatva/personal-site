@@ -14,7 +14,7 @@ export default function Home() {
                 alt="Profile picture"
                 fill
                 sizes="(max-width: 768px) 100vw, 192px"
-                className="object-cover object-[10%_25%] scale-150 origin-bottom-left"
+                className="object-cover object-[0%_0%] scale-140 origin-bottom-left"
                 priority
                 quality={100}
               />
