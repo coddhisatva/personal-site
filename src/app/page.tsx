@@ -8,13 +8,17 @@ export default function Home() {
         <div className="flex flex-col items-center text-center space-y-8">
           {/* Profile Picture */}
           <div className="relative w-48 h-48 rounded-full overflow-hidden">
-            <Image
-              src="/profile.jpg"
-              alt="Profile picture"
-              fill
-              className="object-cover"
-              priority
-            />
+            <div className="absolute inset-0">
+              <Image
+                src="/Profile_org.jpeg"
+                alt="Profile picture"
+                fill
+                sizes="(max-width: 768px) 100vw, 192px"
+                className="object-cover object-[10%_25%] scale-150 origin-bottom-left"
+                priority
+                quality={100}
+              />
+            </div>
           </div>
           
           {/* Name and Title */}
